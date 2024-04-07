@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space Battle Prototype</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    .ship {
+        display: inline-block;
+        margin: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="ship" id="shipA">
+        <h2>Ship A</h2>
+        <p>Health: <span id="healthA">100</span></p>
+        <p>Shield: <span id="shieldA">80</span></p>
+        <button onclick="addWeapon('A')">Add Weapon A</button>
+        <button onclick="addWeapon('B')">Add Weapon B</button>
+        <button onclick="addWeapon('C')">Add Weapon C</button>
+        <button onclick="addModule('A')">Add Module A</button>
+        <button onclick="addModule('B')">Add Module B</button>
+        <button onclick="addModule('C')">Add Module C</button>
+        <button onclick="addModule('D')">Add Module D</button>
+    </div>
+    <div class="ship" id="shipB">
+        <h2>Ship B</h2>
+        <p>Health: <span id="healthB">60</span></p>
+        <p>Shield: <span id="shieldB">120</span></p>
+        <button onclick="addWeapon('A', true)">Add Weapon A</button>
+        <button onclick="addWeapon('B', true)">Add Weapon B</button>
+        <button onclick="addWeapon('C', true)">Add Weapon C</button>
+        <button onclick="addModule('A', true)">Add Module A</button>
+        <button onclick="addModule('B', true)">Add Module B</button>
+        <button onclick="addModule('C', true)">Add Module C</button>
+        <button onclick="addModule('D', true)">Add Module D</button>
+    </div>
+    <button onclick="startBattle()">Start Battle</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
